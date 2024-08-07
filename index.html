@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+ <style>
+  html, body {
+  margin: 0;
+  padding: 0;
+  cursor:crosshair;
+}
+canvas {
+  display: block;
+}
+h1{
+  position: absolute;
+  top:1rem;
+  left:3rem;
+  z-index:2;
+}
+ /*Esto es para reemplazar css*/
+ /*REM, R:raiz y EM:medida tipográfica y el contexto donde estoy, es decir rem: el contexto definido al principio, es una medida estándar*/
+/*VW: la mitad de la pantalla q tenga disponieble v: viewporth w: width*/
+/*z-index: */
+p{
+  position: absolute;
+  width:50vw;
+  top:4rem;
+  left:3rem;
+  z-index:2;
+}
+    /* esta son medidas de profundidad*/
+</style>
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+      <h1>Estoy en Dno096 porque:</h1>
+      <p>La verdad el horario me venía rebien porque me cargan los ramos a las 8:30, el metro está muy lleno. Además suena chori aprender a programar es como más intelectual no sé, no quiero dar explicaciones profundas.</p>
+
+    </main>
+    <script>
+      var a = "hola mundo!";
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+   background(220,80,200);
+}
+function draw() {
+line(pmouseX,pmouseY,mouseX,mouseY);
+}
+    </script>
+  </body>
+</html>
